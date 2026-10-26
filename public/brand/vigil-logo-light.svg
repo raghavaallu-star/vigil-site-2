@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" role="img" aria-label="Vigil.AI">
+  <g transform="translate(2 2)"><path d="M6 9h9l9 18v13Z" fill="#0f1a26"/><path d="M42 9h-9l-9 18v13Z" fill="#3b4a5c"/><circle cx="24" cy="12.5" r="4" fill="#e8641c"/></g>
+  <text x="56" y="36" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.8" fill="#0f1a26">Vigil</text>
+  <circle cx="122" cy="33.5" r="3.1" fill="#e8641c"/>
+  <text x="128" y="36" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.8" fill="#0f1a26">AI</text>
+</svg>

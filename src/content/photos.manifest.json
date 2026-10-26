@@ -1,0 +1,408 @@
+{
+  "industry-cement": {
+    "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAwBQCdASoYAB4APu1arE2ppKSiMBgMATAdiWUAwc3dGXoD6mK1Ng4gr4Ae5gt+gcjgAAD+7T5o4E710c1eaLWAndz9wUUF7Ae1OpSwcflVMKJSB1syQ5fTugMvlAcwMzW3twO3zTt5Jl83vO3KU6Q6CE6qqfV79llwoFLhEj54hrez9C5k0iiQ6fzrxrvPnaUjH5ledKsSSlpETucoBI1Pyzr0YAx2erCrO+8GUWxq82AA",
+    "desktop": {
+      "width": 1920,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/photos/industry-cement-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-cement-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-cement-desktop-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-cement-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-cement-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-cement-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-cement-2": {
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASoYAAoAPu1iqU2ppaOiMAgBMB2JYgCdMoADUzFOkATF+8pdxfFYAP7ZmrFPQb670JHX/evASptrHOEdFHZE3tyq8VR81Vgb39mWzIPoCkwn1LXoU70INo8F48s+g+6/bfM4FrosKUM8xZ+7DMt+sXHXuvBCAAAA",
+    "desktop": {
+      "width": 2560,
+      "height": 1097,
+      "variants": [
+        {
+          "src": "/photos/industry-cement-2-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-cement-2-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-cement-2-desktop-1920.webp",
+          "width": 1920
+        },
+        {
+          "src": "/photos/industry-cement-2-desktop-2560.webp",
+          "width": 2560
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-cement-2-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-cement-2-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-cement-2-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-pharma": {
+    "blur": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAADQBQCdASoYAB4APu1srVEppaQiqAqpMB2JYwDDcy/Auv60MTQR5Sv7wo/93VjYDoiCtv+O4YAAAP6XjY2mIgt7xxxBRNGGFP7gQHjraciBq0NcQe7Z5fRI/tF3Rs8HsnwVyaKIhUn8oZmvXqZqNwWR/kix6V/HNxf4CcR0sucqOENC1IPOQLsMa0ZZp5Es1i/VvdN+Xfmd/kxizENN+os4bBfBM2WopnvKvJ39bKOweS10Z2XVb5v6nTfXp90sx/qtW/JcK10plo+iqKRw20xbeMLWEUAA",
+    "desktop": {
+      "width": 1920,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/photos/industry-pharma-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-pharma-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-pharma-desktop-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-pharma-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-pharma-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-pharma-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-pharma-2": {
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoYAAoAPu1iqU2ppaQiMAgBMB2JbAC7ACKGTZZHG5hc1fc+9wAA/fz3tJCgMTnuBzIfr/KFIId25PFnLYNsR1n7ixiXPRttFyRGCzP/9hhhKHvITxDXvzNRGnrh6ts9gXrhLU584ZEijwAo6EhwHlhG2O3lPDvZ7X4g6b9UUEAAAA==",
+    "desktop": {
+      "width": 2560,
+      "height": 1097,
+      "variants": [
+        {
+          "src": "/photos/industry-pharma-2-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-pharma-2-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-pharma-2-desktop-1920.webp",
+          "width": 1920
+        },
+        {
+          "src": "/photos/industry-pharma-2-desktop-2560.webp",
+          "width": 2560
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-pharma-2-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-pharma-2-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-pharma-2-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-oil-gas": {
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBQCdASoYAB4APu1oqk8ppiOiMBgIATAdiWMAtvqDPbgMLbg/960F64WwGYdBVCLh4gAA/FqhHdslLMfDgRHWjeCrGGZnSd3d/1Ic6Ntk6XoIP+EyOqtMtbOWBg5KlZDRY2VObJJL3SpdqCfmFhxNbH0X4064i3NLjuMD7Eg7ygy86Yan/Rs0nqmXscYVeISZ8Ve7DEt0tXofV1KgAA==",
+    "desktop": {
+      "width": 1440,
+      "height": 1800,
+      "variants": [
+        {
+          "src": "/photos/industry-oil-gas-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-oil-gas-desktop-1440.webp",
+          "width": 1440
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-oil-gas-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-oil-gas-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-oil-gas-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-oil-gas-2": {
+    "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoYAAoAPu1iqU2ppaQiMAgBMB2JZACdACHePnszaQpZ5b3wAPqeN1PXvheRamGWaUSFafoLrg1Q6rg5DVHcDv7m2XK8E8OLL3ccUiPN8dXLEIhxv5tco+YMQFFMc/rdE1jmY0h80OmlfgniWFULMO0AAAA=",
+    "desktop": {
+      "width": 2560,
+      "height": 1097,
+      "variants": [
+        {
+          "src": "/photos/industry-oil-gas-2-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-oil-gas-2-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-oil-gas-2-desktop-1920.webp",
+          "width": 1920
+        },
+        {
+          "src": "/photos/industry-oil-gas-2-desktop-2560.webp",
+          "width": 2560
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-oil-gas-2-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-oil-gas-2-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-oil-gas-2-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-steel": {
+    "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBQCdASoYAB4APuVepU2pJSOiMAwBIByJbACdMt8DTpjC9+6E6l5JV7yis2Y9GnubpNAA/vDLKSzv5WJda2Q4+odsjGp7LWlFRO03SgaEdsNuXEuIgx3nmSlwl+ES3ykBl0/UY2VMiNyMmyou5w7d9ezfaFUwtPN+ILMW/X5A9b/y+sTHP9qG3rYdCqssyIesOYJMobeQ45pb2pIp/e/MtjUc6fysPRkwdzAA",
+    "desktop": {
+      "width": 1920,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/photos/industry-steel-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-steel-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-steel-desktop-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-steel-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-steel-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-steel-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-steel-2": {
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoYAAoAPu1kqk4ppaQiMAgBMB2JbACxG1yB0X7FP2fBcI1igAD+eTbOobvgXOkVwuHlbZjO/6pu2nqDfRwrHeI+V+SM8zW3l++Ml2v0vtfa/8kYISjT9vvGhtS68KFRb60x2f4N+nsi9VluuWlAAA==",
+    "desktop": {
+      "width": 2560,
+      "height": 1097,
+      "variants": [
+        {
+          "src": "/photos/industry-steel-2-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-steel-2-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-steel-2-desktop-1920.webp",
+          "width": 1920
+        },
+        {
+          "src": "/photos/industry-steel-2-desktop-2560.webp",
+          "width": 2560
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-steel-2-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-steel-2-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-steel-2-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-automotive": {
+    "blur": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAAAwBgCdASoYAB4APu1kqU2ppaOiMAgBMB2JZwAOifvcL+FvsHWzl63F29h0XgNeJ2Me6RLMA8CY83wAAP7bapCLHbrbpzxSE7BcdHB5EILgXBep7v3H0wzOdDbnW9tLnvoIBierZr4gBOcisK470NKWOA1Y2fSEe3t4iBzsV4vMe7M3YbXQ6uAQapFOuUf+e5X+ZGmu/cfraHu/7/WDudW17/fJHN9HcpZMJwMoYqubcOL0i/p2fOnxR0si0Iw1Oiqs1Kpoq4qVkt3NcmpTkX2lc8VEWRJFmkPva/PqSZX6epmCFFpOP1MU48Ohuc9LIToK8TOh7Ymf3xE/wBqAQAAA",
+    "desktop": {
+      "width": 1920,
+      "height": 2400,
+      "variants": [
+        {
+          "src": "/photos/industry-automotive-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-automotive-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-automotive-desktop-1920.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-automotive-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-automotive-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-automotive-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
+  "industry-automotive-2": {
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoYAAoAPu1kq04ppaQiMAgBMB2JYgAAXqMpWmcj5WwUbpIAAP1MIptmimE52Us8gHx4lJGEFaNsc2rYHHOxu9QbGMNos41lOg0qn4onHkUNn7CVOyxHMMhhAOkNKp0cnfXecSE9QGkPncy0eOXvjQPPpw+ZaxRUjHUjgAAA",
+    "desktop": {
+      "width": 2560,
+      "height": 1097,
+      "variants": [
+        {
+          "src": "/photos/industry-automotive-2-desktop-960.webp",
+          "width": 960
+        },
+        {
+          "src": "/photos/industry-automotive-2-desktop-1440.webp",
+          "width": 1440
+        },
+        {
+          "src": "/photos/industry-automotive-2-desktop-1920.webp",
+          "width": 1920
+        },
+        {
+          "src": "/photos/industry-automotive-2-desktop-2560.webp",
+          "width": 2560
+        }
+      ]
+    },
+    "mobile": {
+      "width": 1080,
+      "height": 810,
+      "variants": [
+        {
+          "src": "/photos/industry-automotive-2-mobile-480.webp",
+          "width": 480
+        },
+        {
+          "src": "/photos/industry-automotive-2-mobile-768.webp",
+          "width": 768
+        },
+        {
+          "src": "/photos/industry-automotive-2-mobile-1080.webp",
+          "width": 1080
+        }
+      ]
+    }
+  }
+}

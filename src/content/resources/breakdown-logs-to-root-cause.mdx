@@ -1,0 +1,63 @@
+export const metadata = {
+  slug: "breakdown-logs-to-root-cause",
+  title: "From breakdown logs to root cause",
+  description:
+    "Field notes and sensor data usually live in different worlds. Linking them is the fastest way to stop repeat failures.",
+  type: "Blog",
+  date: "2026-10-06",
+  readingMinutes: 6,
+  author: "Vigil.AI Team",
+  tags: ["Reliability", "RCA", "Engineer app"],
+};
+
+Ask a reliability engineer why a raw mill gearbox failed last quarter and you'll often get a good answer. Ask for the evidence behind it and you'll get a notebook entry, a work order with "bearing replaced" in the close-out field, and a promise to pull the trends "when there's time".
+
+The knowledge exists. It just isn't connected.
+
+## Two halves of the same story
+
+Every significant breakdown has two records:
+
+- **The field record:** what the engineer saw, heard and did, including the failure mode, the parts replaced and the time it went down and came back.
+- **The process record:** what the sensors saw in the days and hours before, such as vibration, temperatures, current and load.
+
+Root cause analysis needs both, side by side, on one timeline. In most plants they sit in different systems, owned by different teams, and only meet during a formal RCA, if at all.
+
+## Capture the field record properly
+
+The first step is making breakdown logging fast and structured enough that it actually happens. In the [Engineer Mobile App](/product/engineer-app):
+
+- The engineer picks the asset from the same hierarchy the historian uses.
+- They choose a failure mode from a short, standard list, and can add a note and a photo.
+- Start and end times are captured automatically.
+
+It takes under a minute. More importantly, every log is now tied to an asset ID and a timestamp that the process data understands.
+
+## Link it automatically
+
+Once a breakdown is logged, the [Root Cause Agent](/agents/root-cause) assembles a single timeline:
+
+1. Historian trends for the asset in the days before the event.
+2. Any AI alerts or health-score changes that fired.
+3. Recent inspections and check results from the app.
+4. The work-order history for the asset.
+
+It then ranks which signals changed most before the failure and looks for similar past events on the same asset class.
+
+## Close the loop with predictions
+
+This is where the value compounds. For every breakdown, you can now answer:
+
+- **Was it predicted?** Did an alert fire, and how far ahead?
+- **Was it acted on?** If an alert fired, what happened next?
+- **Is it a repeat?** Has this failure mode occurred on this asset before?
+
+Predicted-but-missed events point to process gaps. Unpredicted events point to models that need new signals or more training data. Repeats go straight onto the **bad-actor list** in your [Reliability Excellence](/product/reliability-excellence) program.
+
+## What engineers still do
+
+None of this replaces engineering judgment. The agent drafts a starting point and the reliability team confirms, corrects and decides on corrective actions. What changes is the starting point. Instead of a blank page and an afternoon of spreadsheet work, the engineer starts with a timeline that already has the evidence on it.
+
+## Start small
+
+You don't need every asset connected to begin. Pick one line, log every breakdown in the app for a quarter, and review the linked timelines in the weekly meeting. Within a few months the patterns, and the repeat offenders, become hard to ignore.

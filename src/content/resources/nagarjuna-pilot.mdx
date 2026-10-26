@@ -1,0 +1,85 @@
+{/*
+  CASE-STUDY TEMPLATE: Nagarjuna pilot (DRAFT)
+
+  This file is a ready-to-fill template. It stays hidden while `draft: true`.
+  To preview locally:   NEXT_PUBLIC_SHOW_DRAFTS=true npm run dev  →  /resources/nagarjuna-pilot
+  To publish:           fill every value, get written customer approval for the
+                        name, figures and quote, then set `draft: false`.
+
+  Rules:
+  - Leave a value as null until it is approved. Blocks render "Pending approval" for null values.
+  - Report results against the measured baseline, with the measurement period stated.
+  - Savings must stay consistent with how targets are described elsewhere on the site.
+*/}
+
+export const metadata = {
+  slug: "nagarjuna-pilot",
+  title: "Nagarjuna pilot: [approved result headline]",
+  description: "[One-sentence summary of the pilot scope and the approved, measured result.]",
+  type: "Case Study",
+  date: "2026-10-25",
+  readingMinutes: 5,
+  author: "Vigil.AI Team",
+  tags: ["Case study", "Pilot"],
+  draft: true,
+};
+
+<CaseFacts
+  items={[
+    { label: "Customer", value: null },
+    { label: "Location", value: null },
+    { label: "Plant areas in scope", value: null },
+    { label: "Assets covered", value: null },
+    { label: "Pilot period", value: null },
+    { label: "Modules and agents used", value: null },
+  ]}
+/>
+
+## The challenge
+
+[What problem did the plant want to solve? Describe the starting situation in the customer's words where possible: which equipment, which losses, what it was costing in stops, energy or effort.]
+
+## What we did
+
+[Starting scope and how the deployment ran: assessment, historian connection and tag audit, baseline, models and agents brought live, how engineers used alerts and the app.]
+
+## Results against the baseline
+
+[State the baseline period and the measurement period. Only include figures the customer has approved.]
+
+<Metrics
+  items={[
+    { label: "Unplanned stops (covered assets)", value: null, note: "vs baseline period" },
+    { label: "Warning lead time", value: null, note: "median, confirmed alerts" },
+    { label: "Specific heat (kcal/kg clinker)", value: null, note: "vs baseline" },
+    { label: "Specific power (kWh/t)", value: null, note: "vs baseline" },
+  ]}
+/>
+
+<BeforeAfterChart
+  title="Unplanned stops per month, covered assets"
+  unit="stops"
+  lowerIsBetter
+  data={[
+    { label: "Month 1", before: null, after: null },
+    { label: "Month 2", before: null, after: null },
+    { label: "Month 3", before: null, after: null },
+  ]}
+/>
+
+<BeforeAfterChart
+  title="Specific heat consumption"
+  unit="kcal/kg clinker"
+  lowerIsBetter
+  data={[
+    { label: "Month 1", before: null, after: null },
+    { label: "Month 2", before: null, after: null },
+    { label: "Month 3", before: null, after: null },
+  ]}
+/>
+
+<PullQuote quote={null} name={null} title={null} company={null} />
+
+## What's next
+
+[Next areas or plants, and what the customer plans to extend.]

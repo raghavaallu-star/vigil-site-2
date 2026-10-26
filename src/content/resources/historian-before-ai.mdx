@@ -1,0 +1,57 @@
+export const metadata = {
+  slug: "historian-before-ai",
+  title: "Why a historian comes before AI in a cement plant",
+  description:
+    "Predictive maintenance is only as good as the data it learns from. Here's why trusted, contextualized time-series data is the first step, not an afterthought.",
+  type: "Blog",
+  date: "2026-09-08",
+  readingMinutes: 6,
+  author: "Vigil.AI Team",
+  tags: ["Historian", "Data quality", "Predictive maintenance"],
+};
+
+Every plant leader has heard the pitch: plug AI into your plant and it will predict failures before they happen. The idea is sound. Equipment rarely fails without warning, and the warning is usually written in the data. But there's a step that gets skipped far too often, and skipping it is the most common reason predictive projects stall.
+
+That step is the **process historian**.
+
+## What a historian actually does
+
+A historian is a database built for industrial time-series data. It connects to your PLCs, DCS and SCADA systems and does four things well:
+
+1. **Captures** readings at high frequency without burdening the control system.
+2. **Stores** them for years, not weeks, with compression that keeps the shape of every excursion.
+3. **Contextualizes** them, mapping cryptic tag names to real equipment: plant, line, kiln, mill, fan, bearing.
+4. **Serves** that history to anything that needs it, including dashboards, reports, models and apps.
+
+Many plants have some of this already. Control systems keep a short rolling buffer, and engineers export to spreadsheets when they need to investigate. That's not the same as a single, trusted, long-term record.
+
+## Why AI needs it first
+
+A predictive model learns what "normal" looks like for a specific asset, and what the run-up to a failure looked like in the past. That means it needs:
+
+- **Long history.** To learn from past failures, you need the months of data before them. A two-week buffer can't teach anything.
+- **Consistent context.** A model for ID fan 2 needs to know which tags belong to ID fan 2. Without an asset hierarchy, every model is a hand-built one-off.
+- **Trustworthy signals.** A drifting thermocouple or a mislabelled tag doesn't just add noise. It teaches the model the wrong lesson.
+
+> Without a historian, improvement relies on assumptions.
+
+## Data quality is a project, not a checkbox
+
+Before we train a single model, we run a **tag and instrument audit** on the critical assets in scope:
+
+- Is every important measurement actually connected?
+- Are tags named and mapped to the right equipment?
+- Are instruments calibrated and reading plausibly?
+- Are there gaps, flat-lines or obvious step changes in the history?
+
+The output is a short, prioritized list: instruments to recalibrate, tags to fix and signals to exclude until they're trustworthy. It's unglamorous work, and it is the foundation of everything that follows.
+
+## One source of truth changes meetings, too
+
+There's a benefit beyond AI. When production, maintenance and process teams all read from the same historian, the daily meeting stops being an argument about whose numbers are right. Run factor, specific heat, specific power and downtime come from one place. That shared truth is what makes a [governance rhythm](/product/governance) work.
+
+## How we sequence it
+
+In our [deployment method](/approach), connecting the historian and auditing tags is the second step, right after agreeing a starting scope. Predictive models go live only once the data underneath them is trusted, and the engineer app runs alongside so the plant sees value early while the foundation is laid properly.
+
+If you're evaluating predictive maintenance, start by asking a simple question: *where will the model's data come from, and do we trust it?* If the answer isn't clear, the historian comes first.

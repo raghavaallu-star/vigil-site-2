@@ -1,0 +1,60 @@
+export const metadata = {
+  slug: "kiln-false-air",
+  title: "Kiln false-air: the hidden 2% of your power bill",
+  description:
+    "Air that leaks into the kiln and preheater system costs both heat and fan power. Here's how false air hides, how to find it and how to size the prize for your plant.",
+  type: "Blog",
+  date: "2026-09-22",
+  readingMinutes: 7,
+  author: "Vigil.AI Team",
+  tags: ["Energy", "False air", "Kiln"],
+};
+
+False air is one of the quietest losses in a cement plant. It doesn't trip anything or set off alarms. It just raises energy use a little every hour of every day.
+
+## What false air is
+
+False air is ambient air that enters the pyroprocessing system where it isn't meant to: through worn kiln inlet and outlet seals, leaking cyclone flaps and inspection doors, cracked ducts, and expansion joints. In grinding circuits it also leaks in through mill seals, ducts and filter housings.
+
+## Why it costs twice
+
+False air hurts in two ways at once:
+
+- **Heat.** Cold air has to be heated to process temperature, which takes fuel. It also dilutes the hot gas and can disturb combustion and heat transfer.
+- **Power.** Every cubic meter of leaked air has to be moved by the ID fan and other process fans. More gas volume means more fan power, and it can push fans toward their limits and cap production.
+
+That double penalty is why false-air reduction shows up on both sides of an energy program.
+
+## How big is the prize?
+
+It depends on the plant, and we won't pretend otherwise. In the target model we use with plants, false-air reduction is an **illustrative lever of roughly 2.0% of thermal energy and roughly 1.5% of power**. Those numbers are starting hypotheses. They become real targets only after we measure your own baseline.
+
+## How false air hides
+
+False air is hard to see because no single instrument measures it directly. It shows up indirectly:
+
+- **Oxygen rising between measurement points.** If O₂ climbs between the kiln inlet and the preheater exit with no combustion reason, air is getting in somewhere in between.
+- **Fan power creeping up** at constant production and similar operating conditions.
+- **Temperature profiles** that cool faster than expected across a stage.
+- **Pressure behaviour** around seals and flaps that changes after maintenance or as wear progresses.
+
+Individually these signals are easy to dismiss. Together, and tracked continuously, they point to where the leak is and roughly how big it is.
+
+## Finding it with data
+
+With a [historian](/product/historian) in place, the analysis becomes routine instead of a one-off study:
+
+1. **Map the measurement points** (O₂ analyzers, pressures, temperatures and fan power) to the preheater and kiln sections.
+2. **Compute false-air estimates by section** continuously from the oxygen balance.
+3. **Trend them** against production and fan power so changes stand out.
+4. **Flag step changes** and link them to maintenance events and inspections.
+
+Our [Energy Optimization Agent](/agents/energy-optimization) does this continuously and raises an alert with the likely location when a section drifts.
+
+## Fixing it
+
+The fixes are mechanical and well known: seal replacement, flap maintenance, door gaskets, duct repairs. The hard part is knowing *where* to send the crew and *proving* the fix worked. A before-and-after trend from the historian closes that loop and keeps it closed, because seals wear again.
+
+## Make it a habit
+
+False air comes back. The plants that keep it under control review it every week alongside specific heat and specific power, as part of a [regular KPI rhythm](/resources/kpi-rhythm). That's how a one-time saving becomes a lasting one.

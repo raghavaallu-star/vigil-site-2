@@ -1,0 +1,322 @@
+@import "tailwindcss";
+
+/*
+ * Vigil.AI design tokens: editorial system.
+ * White and warm paper surfaces, near-black ink, a single kiln-orange accent,
+ * serif display type and hairline rules. Teal and red are reserved for status.
+ * Text-on-light uses kiln-700 so contrast stays above WCAG AA.
+ */
+@theme {
+  --color-ink-950: #0a0e13;
+  --color-ink-900: #10151c;
+  --color-ink-850: #151b23;
+  --color-ink-800: #1b222c;
+  --color-ink-700: #263040;
+  --color-ink-600: #3a4656;
+  --color-ink-500: #5b6879;
+  --color-ink-400: #8b97a8;
+  --color-ink-300: #b4bfcc;
+  --color-ink-200: #d5dce4;
+  --color-ink-100: #e9edf2;
+  --color-ink-50: #f4f6f8;
+
+  --color-navy-900: #0f1a26;
+  --color-navy-700: #3b4a5c;
+
+  --color-paper: #f7f4ef;
+  --color-paper-2: #efeae2;
+
+  --color-kiln-200: #fde0b8;
+  --color-kiln-300: #fbc27e;
+  --color-kiln-400: #f8a54b;
+  --color-kiln-500: #f28c28;
+  --color-kiln-600: #d9711a;
+  --color-kiln-700: #a34a08;
+  --color-kiln-800: #8a3f08;
+
+  --color-signal-300: #7ee8d8;
+  --color-signal-400: #34d3bd;
+  --color-signal-500: #14b8a6;
+  --color-signal-700: #0b7a6e;
+
+  --color-alarm-400: #ff7a6b;
+  --color-alarm-500: #f05252;
+  --color-alarm-700: #b42318;
+
+  --radius-card: 0.375rem;
+
+  --animate-scan: scan 6s linear infinite;
+  --animate-pulse-ring: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-node-pulse: node-pulse 2.8s ease-in-out infinite;
+  --animate-scan-spin: scan-spin 6s linear infinite;
+  --animate-aurora: aurora 18s ease-in-out infinite alternate;
+  --animate-orbit: scan-spin 40s linear infinite;
+
+  @keyframes node-pulse {
+    0%,
+    100% {
+      transform: scale(0.85);
+      opacity: 0.75;
+    }
+    50% {
+      transform: scale(1.12);
+      opacity: 1;
+    }
+  }
+  @keyframes scan-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes aurora {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    100% {
+      transform: translate3d(-3%, 4%, 0) scale(0.96);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes scan {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+}
+
+@theme inline {
+  --font-display: var(--font-serif), "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-kiln-700);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.on-light {
+  color-scheme: light;
+}
+
+::selection {
+  background: var(--color-kiln-200);
+  color: var(--color-ink-950);
+}
+
+/* Let grid children shrink so truncated text never widens a track. */
+.grid > * {
+  min-width: 0;
+}
+
+.bg-grid,
+.bg-grid-light {
+  background-image:
+    linear-gradient(to right, rgb(16 21 28 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(16 21 28 / 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Accent text (class name kept so markup stays stable): solid kiln, no gradient. */
+.text-gradient-kiln {
+  color: var(--color-kiln-700);
+}
+
+/* Prose for MDX resources */
+.prose-vigil {
+  color: var(--color-ink-800);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.prose-vigil > * + * {
+  margin-top: 1.15em;
+}
+.prose-vigil h2 {
+  margin-top: 2.2em;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  color: var(--color-ink-950);
+}
+.prose-vigil h3 {
+  margin-top: 1.8em;
+  font-size: 1.35rem;
+  color: var(--color-ink-950);
+}
+.prose-vigil a {
+  color: var(--color-kiln-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-vigil ul {
+  list-style: disc;
+  padding-left: 1.25em;
+}
+.prose-vigil ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+}
+.prose-vigil li + li {
+  margin-top: 0.4em;
+}
+.prose-vigil strong {
+  color: var(--color-ink-950);
+}
+.prose-vigil blockquote {
+  border-left: 2px solid var(--color-kiln-600);
+  padding-left: 1em;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-ink-900);
+}
+.prose-vigil code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-paper-2);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+.prose-vigil table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.prose-vigil th,
+.prose-vigil td {
+  border-bottom: 1px solid var(--color-ink-200);
+  padding: 0.5em 0.6em;
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------- Editorial surface system ---------- */
+
+@layer components {
+  /* Flat card: hairline border, no shadow. */
+  .card {
+    background: #fff;
+    border: 1px solid rgb(16 21 28 / 0.1);
+  }
+  /* Interactive card: an orange rule appears along the top edge on hover. */
+  .card-hover {
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .card-hover:hover {
+    border-color: rgb(16 21 28 / 0.25);
+    box-shadow: inset 0 3px 0 var(--color-kiln-600);
+  }
+  /* Kept for markup compatibility; now plain surfaces. */
+  .glass {
+    background: #fff;
+    border: 1px solid rgb(16 21 28 / 0.1);
+  }
+  .ring-gradient {
+    position: relative;
+  }
+  .icon-tile {
+    background: transparent;
+  }
+  .pill {
+    background: transparent;
+  }
+  .aurora {
+    display: none;
+  }
+  .grain::after {
+    content: none;
+  }
+  .hairline-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: min(1176px, calc(100% - 2rem));
+    height: 1px;
+    transform: translateX(-50%);
+    background: rgb(16 21 28 / 0.08);
+  }
+  /* Editorial link: underline that thickens on hover. */
+  .link-editorial {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(163 74 8 / 0.45);
+    transition: text-decoration-color 0.2s ease;
+  }
+  .link-editorial:hover {
+    text-decoration-color: var(--color-kiln-700);
+    text-decoration-thickness: 2px;
+  }
+  /* Large serif numerals for stats. */
+  .numeral {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-variant-numeric: lining-nums;
+    letter-spacing: -0.03em;
+  }
+}
