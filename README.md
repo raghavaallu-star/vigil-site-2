@@ -4,7 +4,7 @@ Marketing site for **Vigil.AI**, predictive reliability, energy optimization and
 
 Built with Next.js 15 (App Router), TypeScript, Tailwind CSS v4, Radix primitives, Framer Motion, Recharts and MDX.
 
-## Quick start
+## Quick start1
 
 ```bash
 npm install
